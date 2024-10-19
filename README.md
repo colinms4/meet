@@ -4,7 +4,7 @@ test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
 
 # Stories and Scenarios 
-** 1. Show/Hide Event Details **
+**1. Show/Hide Event Details**
 As a user,
 I should be able to hit a button in the UI,
 So that I can see or hide details.
