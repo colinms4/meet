@@ -9,6 +9,9 @@ Calendar API to fetch upcoming events.
 >I should be able to hit a button in the UI,
 >So that I can see or hide details.
 
+Given: A user wants to find an event  <br />
+When: The user clicks a button on the page <br />
+Then: The event is displayed or hidden  <br />
 
 
 **2. Specify number of events:**
@@ -16,10 +19,16 @@ As a user,
 I should be able to type in a form,
 So that I can specify how many events I want to see.
 
+Given: A user is on the event listing page  <br />
+When: The user inputs a number into the menu <br />
+Then: A list of events is displayed based on the input of the user <br />
+
 **3. Use the app when offline:**
 As a user,
 I should be able to use the app when offline,
 So that I can still browse the app with cached data while offline.
+
+
 
 **4. Add an app shortcut to the home screen:**
 As a user, 
