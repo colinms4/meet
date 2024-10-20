@@ -6,7 +6,7 @@ Calendar API to fetch upcoming events.
 # Stories and Scenarios 
 **1. Filter events by city** 
 >As a user, 
->I should able to filter events by city,
+>I should able to type in a searchbar to find my city,
 >So I can find events in my city.
 
 **Scenario #1 When user hasn't searched for a city, show upcoming events from all cities.** <br />
