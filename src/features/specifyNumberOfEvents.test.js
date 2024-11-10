@@ -18,7 +18,7 @@ defineFeature(feature, test => {
         when('The user hasn\'t input a number into the menu', () => {
             AppDOM = AppComponent.container.firstChild;
             const EventListDOM = AppDOM.querySelector('#event-list');
-            NumberOfEventsComponent = render(<NumberOfEvents currentNOE={32} setCurrentNOE={() => { }} setErrorMessage={() => { }} />, { container: EventListDOM });
+            NumberOfEventsComponent = render(<NumberOfEvents currentNOE={32} setCurrentNOE={() => { }} setErrorAlert={() => { }} />, { container: EventListDOM });
             expect(NumberOfEventsComponent).toBeTruthy();
         });
 
@@ -38,7 +38,7 @@ defineFeature(feature, test => {
 
         when('The user inputs a number into the menu', async () => {
             const EventListDOM = AppComponent.container.querySelector('#event-list');
-            NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => { }} setErrorMessage={() => { }} />, { container: EventListDOM });
+            NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => { }} setErrorAlert={() => { }} />, { container: EventListDOM });
             const user = userEvent.setup();
             const EventNumber = NumberOfEventsComponent.getByRole('textbox');
             await user.type(EventNumber, '{backspace}{backspace}10');
@@ -49,4 +49,4 @@ defineFeature(feature, test => {
         });
     });
 
-})
+});
