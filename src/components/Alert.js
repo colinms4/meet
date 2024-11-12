@@ -48,5 +48,13 @@ class ErrorAlert extends Alert {
     }
 }
 
+class WarningAlert extends Alert {
+    constructor(props) {
+        super(props);
+        this.color = 'rgb(255, 215, 0)'; // orange
+        this.bgColor = 'rgb(255, 219, 187)'; // light orange
+    }
+}
 
-export { InfoAlert, ErrorAlert };
+
+export { InfoAlert, ErrorAlert, WarningAlert };
